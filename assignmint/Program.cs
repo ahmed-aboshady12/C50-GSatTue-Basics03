@@ -114,16 +114,25 @@ namespace assignmint
             #endregion
             #region Q14
             //Write a do -while loop that prints "Checking book..." exactly 3 times.
-            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            int i = 0;
-            do
-            {
-                Console.WriteLine($"{1 + i}.{books[i]}");
-                i++;
-            }
-            while(i <  books.Length);
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //int i = 0;
+            //do
+            //{
+            //    Console.WriteLine($"{1 + i}.{books[i]}");
+            //    i++;
+            //}
+            //while(i <  books.Length);
             #endregion
-
+            #region Q15
+            //Using the same books array, use a foreach loop to print every book title.
+            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            int contr = 1;
+            foreach (string i in books)
+            {
+                Console.WriteLine($"{1 + contr}.{i}");
+                contr++;
+            }
+            #endregion
             }
     }
 }
