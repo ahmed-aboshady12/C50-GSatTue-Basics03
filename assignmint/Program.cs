@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Runtime.Intrinsics.X86;
 using System.Text;
 
 namespace assignmint
@@ -23,11 +24,17 @@ namespace assignmint
             #endregion
             #region Q03
             //Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same object.Print the final result.
+            //StringBuilder book = new StringBuilder();
+            //book.Append("Book List");
+            //book.Append(" - Updated");
+            //Console.WriteLine(book);
+            #endregion
+            #region Q04
+            //Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library". Print the result.
             StringBuilder book = new StringBuilder();
-
             book.Append("Book List");
             book.Append(" - Updated");
-
+            book.Replace("Book List", "Library");
             Console.WriteLine(book);
             #endregion
         }
