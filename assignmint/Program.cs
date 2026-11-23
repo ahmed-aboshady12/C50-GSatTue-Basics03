@@ -39,9 +39,21 @@ namespace assignmint
             #endregion
             #region Q05
             //Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code, Pages: 464" using the + operator.
+            //string title = "Clean Code";
+            //int pages = 464;
+            //Console.WriteLine("Book: " + title + ", Pages: " + pages);
+            #endregion
+            #region Q06
+            //Build the same sentence as above, but using string interpolation ($"...")
+            //string title = "Clean Code";
+            //int pages = 464;
+            //Console.WriteLine($"Book: {title}, Pages: {pages}");
+            #endregion
+            #region Q07
+            //Build the same sentence again, but using string.Format().
             string title = "Clean Code";
             int pages = 464;
-            Console.WriteLine("Book: " + title + ", Pages: " + pages);
+            Console.WriteLine(string.Format("Book: {0}, Pages: {1}",title,pages));
             #endregion
         }
     }
