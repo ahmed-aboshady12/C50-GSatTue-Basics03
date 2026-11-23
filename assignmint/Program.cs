@@ -125,12 +125,24 @@ namespace assignmint
             #endregion
             #region Q15
             //Using the same books array, use a foreach loop to print every book title.
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //int contr = 1;
+            //foreach (string i in books)
+            //{
+            //    Console.WriteLine($"{1 + contr}.{i}");
+            //    contr++;
+            //}
+            #endregion
+            #region Q16
+            //Using the same books array, loop through it and print each title, but stop completely(break) onceyou reach "Refactoring".
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            int contr = 1;
-            foreach (string i in books)
+            int i = 0;
+            while (true)
             {
-                Console.WriteLine($"{1 + contr}.{i}");
-                contr++;
+                Console.WriteLine($"{1 + i}.{books[i]}");
+                i++;
+                if (books[i] == "Refactoring")
+                    break;
             }
             #endregion
             }
