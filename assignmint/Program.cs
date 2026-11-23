@@ -135,14 +135,29 @@ namespace assignmint
             #endregion
             #region Q16
             //Using the same books array, loop through it and print each title, but stop completely(break) onceyou reach "Refactoring".
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //int i = 0;
+            //while (true)
+            //{
+            //    Console.WriteLine($"{1 + i}.{books[i]}");
+            //    i++;
+            //    if (books[i] == "Refactoring")
+            //        break;
+            //}
+            #endregion
+            #region Q17
+            //Using the same books array, print every title except "The Pragmatic Programmer"(skip it with continue, don't stop the loop).
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
             int i = 0;
-            while (true)
+            while (i < books.Length)
             {
+                if (books[i] == "The Pragmatic Programmer")
+                {
+                    i++;
+                    continue;
+                }
                 Console.WriteLine($"{1 + i}.{books[i]}");
                 i++;
-                if (books[i] == "Refactoring")
-                    break;
             }
             #endregion
             }
