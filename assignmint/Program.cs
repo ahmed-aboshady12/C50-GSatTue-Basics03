@@ -31,11 +31,17 @@ namespace assignmint
             #endregion
             #region Q04
             //Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library". Print the result.
-            StringBuilder book = new StringBuilder();
-            book.Append("Book List");
-            book.Append(" - Updated");
-            book.Replace("Book List", "Library");
-            Console.WriteLine(book);
+            //StringBuilder book = new StringBuilder();
+            //book.Append("Book List");
+            //book.Append(" - Updated");
+            //book.Replace("Book List", "Library");
+            //Console.WriteLine(book);
+            #endregion
+            #region Q05
+            //Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code, Pages: 464" using the + operator.
+            string title = "Clean Code";
+            int pages = 464;
+            Console.WriteLine("Book: " + title + ", Pages: " + pages);
             #endregion
         }
     }
