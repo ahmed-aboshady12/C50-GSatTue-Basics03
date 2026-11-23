@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using System.Runtime.Intrinsics.X86;
 using System.Text;
+using System.Timers;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace assignmint
@@ -103,15 +104,26 @@ namespace assignmint
             #endregion
             #region Q13
             //Using the same books array, use a while loop to print every book title.
-            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring"};
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring"};
+            //int i = 0;
+            //while (i < books.Length)
+            //{
+            //    Console.WriteLine($"{1 + i}.{books[i]}");
+            //    i++;
+            //}
+            #endregion
+            #region Q14
+            //Write a do -while loop that prints "Checking book..." exactly 3 times.
+            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
             int i = 0;
-            while (i < books.Length)
+            do
             {
                 Console.WriteLine($"{1 + i}.{books[i]}");
                 i++;
             }
+            while(i <  books.Length);
             #endregion
 
-        }
+            }
     }
 }
