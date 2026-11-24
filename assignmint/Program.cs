@@ -147,19 +147,33 @@ namespace assignmint
             #endregion
             #region Q17
             //Using the same books array, print every title except "The Pragmatic Programmer"(skip it with continue, don't stop the loop).
-            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            int i = 0;
-            while (i < books.Length)
-            {
-                if (books[i] == "The Pragmatic Programmer")
-                {
-                    i++;
-                    continue;
-                }
-                Console.WriteLine($"{1 + i}.{books[i]}");
-                i++;
-            }
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //int i = 0;
+            //while (i < books.Length)
+            //{
+            //    if (books[i] == "The Pragmatic Programmer")
+            //    {
+            //        i++;
+            //        continue;
+            //    }
+            //    Console.WriteLine($"{1 + i}.{books[i]}");
+            //    i++;
+            //}
             #endregion
+            #region Q18
+            //Write a method PrintFirstBook() that prints the first book in the books array.If the array is empty, use return to exit the method early instead of printing anything.
+            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+
+            void PrintFirstBook()
+            {
+                if (books.Length == 0)
+                    return;
+
+                Console.WriteLine(books[0]);
             }
+
+            PrintFirstBook();
+            #endregion
+        }
     }
 }
